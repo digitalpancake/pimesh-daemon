@@ -1,2 +1,6 @@
-# pimesh-daemon
-Background daemon for a PiMesh system
+<div align="center">
+
+# PiMesh
+
+### Background daemon for a PiMesh system
+</div>
