@@ -16,6 +16,23 @@ sqlite3* connect_db() {
     return db;
 }
 
-int get_users() {
+int get_users_callback (void *data, int argc, char **argv, char **azColName) {
+   for(int i = 0; i<argc; i++){
+      printf("%s = %s\n", azColName[i], argv[i] ? argv[i] : "NULL");
+   }
+   return 0;}
+
+int get_users(sqlite3* db) {
+    const char* data = "Callback function";
+
+    char* sql = "select * from Users";
+
+    char* z_err_msg;
+    int rc = sqlite3_exec(db, sql, get_users_callback, (void*)data, &z_err_msg);
+
+    if(rc!=SQLITE_OK) {
+        sqlite3_free(z_err_msg);
+    }
+
     return 0;
 }

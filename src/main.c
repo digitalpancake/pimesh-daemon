@@ -8,6 +8,7 @@
 
 int main() {
     sqlite3* db = connect_db();
+    get_users(db);
     sqlite3_close(db);
     return 0;
 }
