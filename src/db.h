@@ -1,4 +1,4 @@
 #include "sqlite3.h"
 
 sqlite3* connect_db();
-int execute_sql();
+int get_users(sqlite3* db);

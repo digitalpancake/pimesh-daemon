@@ -7,8 +7,6 @@
 // Connect to SQLite
 
 int main() {
-    sqlite3* db = connect_db();
-    sqlite3_close(db);
     return 0;
 }
 

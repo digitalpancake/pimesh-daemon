@@ -1,5 +1,5 @@
 typedef struct {
-    int ID;
-    char* Name;
-    char* Username;
-} user_t;
+    int id;
+    char* name;
+    char* username;
+} user;
