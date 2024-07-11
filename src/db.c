@@ -16,6 +16,6 @@ sqlite3* connect_db() {
     return db;
 }
 
-int execute_sql() {
+int get_users() {
     return 0;
 }
