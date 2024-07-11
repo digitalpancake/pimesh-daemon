@@ -1,6 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 
 int main() {
-    printf("Hello World\n");
+    while(1) {
+        int err = run_daemon();
+        if (err != 0) {
+            return err;
+        }
+    }
     return 0;
 }
+
+int run_daemon() {
+    return 0;
+}
+
