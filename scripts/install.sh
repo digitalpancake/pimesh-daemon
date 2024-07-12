@@ -19,5 +19,5 @@ else
 
     git clone https://github.com/digitalpancake/pimesh-daemon.git /tmp/pimesh-daemon
 
-    rm -r /tmp/pimesh-daemon
+    rm -rf /tmp/pimesh-daemon
 fi
