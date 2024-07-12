@@ -6,3 +6,8 @@
 * File Receiving
 * SD Card Flasher
 * Update Pinet
+
+localhost/api/system
+localhost/api/install/prog_name
+localhost/api/user/add|delete|update|/user_name
+localhost/api/update
