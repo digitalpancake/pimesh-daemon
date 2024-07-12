@@ -1,0 +1,5 @@
+IndentWidth: 4
+TabWidth: 4
+PointerAlignment: Left
+AccessModifierOffset: 0
+IndentAccessModifiers: true
