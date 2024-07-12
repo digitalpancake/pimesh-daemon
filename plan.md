@@ -4,6 +4,7 @@
 * Network Install
 * SD Card Flasher
 * Backwards Compatibility
+* Active Directory ( p2p connection between two schools )
 * Wireless and Wired Networks
 
 # Hardware Requirements
