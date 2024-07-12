@@ -18,7 +18,7 @@ void *handle_client(void *arg) {
     ssize_t bytes_received = recv(client_file_descriptor, buffer,
                                   BUFFER_SIZE, 0);
 
-    char* hello = "<!DOCTYPE html><html> <head> <title>Page Title</title> </head> <body> <h1>This is a Heading</h1> <p>This is a paragraph.</p> </body> </html>";
+    char* hello = "hello";
     send(client_file_descriptor, hello, strlen(hello), 0);
 
     free(arg);
