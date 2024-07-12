@@ -4,6 +4,7 @@
 * Network Install
 * SD Card Flasher
 * Backwards Compatibility
+* Active Directory ( p2p connection between two schools )
 * Wireless and Wired Networks
 
 # Hardware Requirements
@@ -29,3 +30,11 @@
 * CLI for accessing daemon API ( FOSS )
 * Web client for accessing daemon ( Closed Source )
 * Pi Client ( FOSS )
+
+
+
+
+### Client Software
+
+* PiMesh Client
+* Git
