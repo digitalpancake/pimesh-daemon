@@ -1,14 +1,15 @@
 TARGET_EXEC := pimesh
 
 BUILD_DIR := ./build
-SRC_DIRS := ./src
-SRCS := $(shell find $(SRC_DIRS) -name '*.c' -or -name '*.s')
+SRC_DIR := ./src
+LIB_DIR := ./lib
+SRCS := $(shell find $(SRC_DIRS) $(LIB_DIR) -name '*.c' -or -name '*.s')
 
 OBJS := $(SRCS:%=$(BUILD_DIR)/%.o)
 
 DEPS := $(OBJS:.o=.d)
 
-INC_DIRS := $(shell find $(SRC_DIRS) -type d)
+INC_DIRS := $(shell find $(SRC_DIRS) $(LIB_DIR) -type d)
 INC_FLAGS := $(addprefix -I,$(INC_DIRS))
 
 CPPFLAGS := $(INC_FLAGS) -MMD -MP
