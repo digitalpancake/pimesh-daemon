@@ -1,20 +1,23 @@
 #!/bin/bash
 
-# check if systemd unit file already exists
 ## List to install
 # Git
 # PiMesh
 # Gum?
 
+# check if systemd unit file already exists
 if [[ -f "/lib/systemd/system/pimesh.service" ]]; then
-	echo "pimesh is already installed on your machine!"
+	echo "PiMesh is already installed on your machine!"
+# otherwise, install pimesh and dependencies
 else
     if ! command -v git &> /dev/null
     then
-        echo "Installing Git"
+        echo "Installing Git..."
         sudo apt-get update
         sudo apt-get install git -y
     fi
 
-    git clone https://github.com/digitalpancake/pimesh-daemon.git
+    git clone https://github.com/digitalpancake/pimesh-daemon.git /tmp/pimesh-daemon
+
+    rm -r /tmp/pimesh-daemon
 fi
