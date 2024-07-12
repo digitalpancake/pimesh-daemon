@@ -29,3 +29,11 @@
 * CLI for accessing daemon API ( FOSS )
 * Web client for accessing daemon ( Closed Source )
 * Pi Client ( FOSS )
+
+
+
+
+### Client Software
+
+* PiMesh Client
+* Git
