@@ -4,7 +4,7 @@
 * Network Install
 * SD Card Flasher
 * Backwards Compatibility
-* Active Directory ( p2p connection between two schools )
+* Connect multiple separate PiMeshes
 * Wireless and Wired Networks
 
 # Hardware Requirements
