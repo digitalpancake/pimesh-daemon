@@ -41,7 +41,7 @@ void run_server() {
     socket_address.sin_port = htons(PORT); // Set the port (in network byte order)
 
     // Bind the socket to the port
-    if(bind(socket_file_descriptor, (struct sockaddr *)&socket_address, 
+    if(bind(socket_file_descriptor, (struct sockaddr *)&socket_address,
             sizeof(socket_address)) < 0) {
         perror("Socket failed to bind to port");
         exit(EXIT_FAILURE);
@@ -60,8 +60,8 @@ void run_server() {
         int *client_file_descriptor = malloc(sizeof(int));
 
         // Accept client connection
-        if ((*client_file_descriptor = accept(socket_file_descriptor, 
-                                (struct sockaddr *)&client_address, 
+        if ((*client_file_descriptor = accept(socket_file_descriptor,
+                                (struct sockaddr *)&client_address,
                                 &client_address_length )) < 0) {
             perror("accept failed");
             continue;
